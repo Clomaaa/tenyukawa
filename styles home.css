@@ -561,7 +561,7 @@ h2 {
     align-items: center; /* align vertical */
 }
 
-video {
+.vid {
     float: right;
     margin-right: 100px;
 }
