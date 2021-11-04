@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kristi&display=swap');
 
 html {
-    zoom:67%;
+    zoom:90%;
 }
 
 
@@ -40,7 +40,7 @@ body {
 li, a, button {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-size: clamp(8px, 1.284vh, 20px);
+    font-size: 14px;
     color: #edf0f1;
     text-decoration:none;
     z-index: 99;
@@ -325,6 +325,7 @@ h2 {
     margin-top:40px;
 margin-left:170px;
 margin-right:170px;
+margin-bottom:50px;
 }
 
 .refh {
@@ -494,3 +495,14 @@ footer {
 
     
 } /*change mo rin yung padding dun sa text kasi for some reason di gumagana*/
+
+@media only screen and (max-width:1500px) and (min-width:1000px) { /*after niyan gawin mo yung sa smartphones pag tapos na yung content*/
+
+    html {
+        zoom:67%;
+    }
+    
+    .tdhd, .tdhd2, .tdhd3 {
+        font-size:24px;
+    }
+}

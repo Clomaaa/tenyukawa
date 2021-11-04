@@ -413,7 +413,8 @@ h2 {
     text-decoration:none;
     text-align: center;
     height:75px;
-    line-height:70%;
+    line-height:100%;
+    margin-bottom:10px;
     letter-spacing: -0.5px;
     padding: auto;
 }
@@ -581,6 +582,7 @@ button.trv1 {
     align-content: center;
     display: block;
     width: 100%;
+    z-index:-99;
 }
 
 footer {
@@ -594,6 +596,7 @@ footer {
     background-color:rgb(10, 2, 19);
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
+    z-index:-99;
 }
 
 .footer1 {
