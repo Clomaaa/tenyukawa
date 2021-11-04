@@ -372,7 +372,6 @@ h2 {
     margin-top: 70px;
     width: 42%;
     padding-bottom: 50px;
-    ar
 }
 
 
@@ -548,7 +547,6 @@ h2 {
 }
 
 .triviarec {
-    display: block;
     position: relative;
     margin-left: 100px;
     margin-right: 100px;
@@ -715,7 +713,7 @@ footer {
     
 } /*change mo rin yung padding dun sa text kasi for some reason di gumagana*/
 
-@media only screen and (max-width:1650px) and (min-width:720px) { /*after niyan gawin mo yung sa smartphones pag tapos na yung content*/
+@media only screen and (max-width:1500px) and (min-width:1000px) { /*after niyan gawin mo yung sa smartphones pag tapos na yung content*/
 
     html {
         zoom:67%;
@@ -726,3 +724,62 @@ footer {
     }
 
 } /*change mo rin yung padding dun sa text kasi for some reason di gumagana*/
+
+@media only screen and (max-width:900px) and (min-width:650px) { 
+
+    html {
+        zoom:50%;
+    }
+
+}
+
+@media only screen and (max-width:650px) and (min-width:100px) { 
+
+    html {
+        zoom:33%;
+    }
+
+    .p1 {
+        font-size:40px;
+    }
+
+    .p2, .p4, .p6 {
+        font-size:20px;
+    }
+
+    .p4 {
+       padding-right:50px;
+       clear:right;
+       float:left;
+    }
+
+    .p6 {
+        padding-left:50px;
+    }
+}
+
+@media only screen and (max-width:380px) and (min-width:100px) { 
+
+    html {
+        zoom:33%;
+    }
+
+    .p1 {
+        font-size:40px;
+    }
+
+    .p2, .p4, .p6 {
+        font-size:20px;
+    }
+
+    .p4 {
+       padding-right:50px;
+       clear:right;
+       float:left;
+    }
+
+    .p6 {
+        padding-left:50px;
+        margin-top:-490px;
+    }
+}
