@@ -166,7 +166,7 @@ nav ul li ul li {
     float: left;
     list-style: none;
     text-align:left;
-    width: 170px; /*dito yung spacing ng rectangles*/ /*palitan lang width para dun sa text wrap*/
+    width: 180px; /*dito yung spacing ng rectangles*/ /*palitan lang width para dun sa text wrap*/
     border-radius: 4px;
     line-height: 20px;
     margin-right:-50px;
