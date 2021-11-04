@@ -561,7 +561,7 @@ h2 {
     align-items: center; /* align vertical */
 }
 
-.vid {
+iframe {
     float: right;
     margin-right: 100px;
 }
