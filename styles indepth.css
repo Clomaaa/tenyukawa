@@ -78,7 +78,6 @@ form {
 }
 
 body {
-    
     position: relative;
     margin: 0 auto;
     width: fit-content;
@@ -1401,4 +1400,11 @@ footer {
         zoom:67%;
     }
     
+}
+
+@media only screen and (max-width:360px) and (min-width:100px) { 
+
+    html {
+        zoom:33%;
+    }
 }
