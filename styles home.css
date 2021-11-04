@@ -103,7 +103,7 @@ body {
 li, a, button {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 15px;
     color: #edf0f1;
     text-decoration:none;
 }
@@ -532,7 +532,7 @@ h2 {
 .imgtd2 {
     clear: both;
     float: right;
-    margin-left: 15px;
+    margin-left: 5px;
     margin-bottom: 100px;
 }
 

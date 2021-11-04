@@ -100,7 +100,7 @@ body {
 li, a, button {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 15px;
     color: #edf0f1;
     text-decoration:none;
     z-index: 99;
@@ -385,7 +385,6 @@ h2 {
     margin-top:40px;
 margin-left:170px;
 margin-right:170px;
-margin-bottom:50px;
 }
 
 .refh {
@@ -416,7 +415,7 @@ margin-bottom:50px;
 .wall4 {
     position: relative;
     size: 7700px 1500px;
-    margin-top:100px;
+    margin-top:0px;
     background-repeat: no-repeat;
     align-content: center;
     display: block;
