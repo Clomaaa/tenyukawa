@@ -1,0 +1,1328 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kristi&display=swap');
+
+html {
+    zoom:67%;
+}
+
+form {
+    height:auto;
+    margin-bottom:-10px;
+
+}
+
+.wrapper {
+    width:100%
+}
+
+body {
+    
+    position: relative;
+    margin: 0 auto;
+    width: fit-content;
+    background-color:rgb(255, 255, 255);
+}
+
+.custom-shape-divider-bottom-1635821622 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1635821622 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 300px;
+    z-index:-99;
+}
+
+.custom-shape-divider-bottom-1635821622 .shape-fill {
+    fill: rgba(10, 3, 29, 0.672);
+}
+
+* {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+    margin: 0;
+    padding:0 ;
+}
+
+
+li, a, button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: clamp(8px, 1.284vh, 20px);
+    color: #edf0f1;
+    text-decoration:none;
+    z-index:99;
+}
+
+
+.navli {
+    color: rgb(70, 67, 67);
+    font-weight: 600;
+    line-height: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    object-position:top;
+    padding: 30px 10%;
+    position: relative;
+    z-index:2;
+}
+
+.logo {
+    order: 3;
+    margin-left: auto;
+    height: 50px;
+} 
+
+nav {
+    list-style: none;
+    z-index:99;
+}
+
+.nav__links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li ul {
+    position: absolute;
+    background-color: #f9f9fafb;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top:5px;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.4s, opacity 0.15s linear;
+}
+
+nav ul li:hover ul  {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+nav ul li ul li {
+    float: left;
+    list-style: none;
+    text-align:left;
+    width: 170px; /*dito yung spacing ng rectangles*/ /*palitan lang width para dun sa text wrap*/
+    border-radius: 4px;
+    line-height: 20px;
+    margin-right:-50px;
+    margin-left:20px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.nav__links li b:hover {
+    color:#0088a9;
+    cursor: pointer; 
+}
+
+.nav__links li b {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li:nth-child(1) {
+    padding: 0 60px 0 0;
+}
+
+.nav__links li:nth-child(2) {
+    padding:0 60px 0 0;
+}
+
+.nav__links li:nth-child(3) {
+    padding:0 60px 0 0;
+}
+
+.nav__links li:nth-child(4) {
+    padding:0 60px 0 0;
+}
+
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+    color:#0088a9;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer; 
+    transition: all 0.3s ease 0s;
+}
+
+button:hover{
+    background-color:rgba(0, 136, 169, 0.8);
+}
+
+.h1a {
+    font-family: "cerebri sans", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    color: #111111;
+    text-decoration:none;
+    margin-top:200px;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+.h2a {
+    font-family: "cerebri sans", sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    color: #111111;
+    text-decoration:none;
+    margin-top:120px;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+.h3a, .h4a, .h5a {
+    font-family: "cerebri sans", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    color: #111111;
+    text-decoration:none;
+    padding-top:20px;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+.what1:hover, .what3:hover {
+    background-color:#bd0aa8;
+}
+
+@keyframes animate
+{
+    0%{
+        transform: translate(0,90px);
+        opacity: 0%;
+    }
+    100%{
+        transform: translate(0,0);
+        opacity: 100%;
+    }
+}
+
+.bb {
+    color:white;
+    font-size: 18px;
+    font-weight:400;
+    font-style: italic;
+}
+
+.everyshapes {
+    background-color: white;
+}
+
+.allshapes {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top:20px;
+
+    font-family: "cerebri sans", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color:ivory;
+    box-sizing: border-box;
+}
+
+
+.undershapes {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top:0px;
+    
+    font-family: "cerebri sans", sans-serif;
+    font-weight: 400;
+    color:ivory;
+    text-align:justify;
+}
+
+.shape1{
+    display: block;
+    position: relative;
+    width: 30%;
+    background-color:rgb(98, 0, 255);
+    height: 50px;
+    margin-left:100px;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.under1 {
+    position: relative;
+    width: 30%;
+    background:linear-gradient(rgb(98, 0, 255), rgb(0, 71, 202));
+    height: 700px;
+    margin-left:100px;
+    margin-right:100px;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    font-size: 15px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.text1, .text2, .text3, .ultext2, .ultext3 {
+    padding: 20px;
+}
+
+.ultext3 li {
+    font-family: "Cerebri Sans", sans-serif;
+}
+
+.shp1, .shp2, .shp3 {
+    font-size: 18px;
+    font-family: "cerebri sans", sans-serif;
+    font-weight: 500;
+    color: white;
+    background: none;
+}
+
+.shp1:hover, .shp2:hover, .shp3:hover {
+    font-size: 18px;
+    font-family: "cerebri sans", sans-serif;
+    font-weight: 500;
+    color: #ffa2f4;
+    background: none;
+}
+
+.shape2 {
+    border-radius: 30px 30px 0px 0px;
+    display: block;
+    position: relative;
+    width: 30%;
+    background-color:rgb(98, 0, 255);
+    height: 50px;
+    margin-left:100px;
+    margin-right:100px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+
+.under2 {
+    position: relative;
+    width: 30%;
+    background:linear-gradient(rgb(98, 0, 255), rgb(0, 71, 202));
+    height: 700px;
+    margin-right:100px;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    font-size: 15px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.shape3 {
+    border-radius: 30px 30px 0px 0px;
+    display: block;
+    position: relative;
+    width: 30%;
+    background-color:rgb(98, 0, 255);
+    height: 50px;
+    margin-right:100px;
+    float: right;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+
+.under3 {
+    display: block;
+    position: relative;
+    width: 30%;
+    background:linear-gradient(rgb(98, 0, 255), rgb(0, 71, 202));
+    height: 700px;
+    margin-right:100px;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.callig {
+    font-family: 'Kristi', cursive;
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 10px;
+}
+
+.evi1 {
+    position: relative;
+    width: 100%;
+    background:linear-gradient(to top left, rgb(43, 43, 43),rgb(24, 21, 33) );
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+
+.arrow1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.arrow1 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+    z-index:3;
+}
+
+.arrow1 .shape-fill {
+    fill: rgb(255, 255, 255);
+}
+
+.arrow2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.arrow2 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+    z-index:3;
+}
+
+.arrow2 .shape-fill {
+    fill: rgb(36, 36, 36);
+}
+
+.arrow3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.arrow3 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+    z-index:3;
+}
+
+.arrow3 .shape-fill {
+    fill: rgb(49, 35, 230);
+}
+
+.arrow4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.arrow4 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+    z-index:3;
+}
+
+.arrow4 .shape-fill {
+    fill: rgb(242, 242, 242);
+}
+
+.arrow5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.arrow5 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+    z-index:3;
+}
+
+.arrow5 .shape-fill {
+    fill: rgb(0, 122, 146);
+}
+
+.svgg {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleY(-100%)
+  }
+
+.dotted1 {
+    clear:both;
+    width:100%;
+    height: 90%;
+    border: rgba(255, 255, 255, 0.7);
+    border-width: 4px;
+    border-style: dashed;
+    margin-left: 40px;
+    margin-right: 40px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+
+.image1 {
+    clear: both;
+    margin-right: 30px;
+    margin-left: 30px;
+    float:left;
+}
+
+.p1 {
+    font-family: "cerebri sans", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    color: #ffffff;
+    text-decoration:none;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+.p2 {
+    float: right;
+    font-family: "Cerebri Sans", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration:none;
+    letter-spacing: -0.5px;
+    text-align: justify;
+    margin-right:30px;
+}
+
+.evi2 {
+    display: block;
+    position: relative;
+    width: 100%;
+    background:linear-gradient(to bottom right, rgb(98, 0, 255), rgb(0, 71, 202));
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    margin-top: 0px;
+}
+
+.dotted2 {
+    clear:both;
+    width:100%;
+    height: 90%;
+    border: rgba(255, 255, 255, 0.7);
+    border-width: 4px;
+    border-style: dashed;
+    margin-left: 40px;
+    margin-right: 40px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+
+.p3 {
+    font-family: "Cerebri Sans", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    color: #ffffff;
+    text-decoration:none;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+.p4 {
+    float: left;
+    font-family: "Cerebri Sans", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration:none;
+    letter-spacing: -0.5px;
+    text-align: justify;
+    margin-right:30px;
+    margin-left:30px;
+}
+
+.image2 {
+    clear: both;
+    margin-right: 30px;
+    margin-left: 30px;
+    float:right;
+} 
+
+.evi3 {
+    display: block;
+    position: relative;
+    width: 100%;
+    background:linear-gradient(to bottom right, rgb(220, 220, 220),rgb(255, 255, 255));
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    margin-top: 0px;
+}
+
+.dotted3 {
+    clear:both;
+    width:100%;
+    height: 90%;
+    border: rgba(22, 22, 22, 0.7);
+    border-width: 4px;
+    border-style: dashed;
+    margin-left: 40px;
+    margin-right: 40px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+
+.p5 {
+    font-family: "Cerebri Sans", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    color: #161616;
+    text-decoration:none;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+.p6 {
+    float: right;
+    font-family: "Cerebri Sans", sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    color: #161616;
+    text-decoration:none;
+    letter-spacing: -0.5px;
+    text-align: justify;
+    margin-right:30px;
+    margin-left:30px;
+}
+
+.image3 {
+    clear: both;
+    margin-right: 30px;
+    margin-left: 30px;
+    float:left;
+} 
+
+.evi4 {
+    display: block;
+    position: relative;
+    width: 100%;
+    background:linear-gradient(to bottom right, rgb(0, 159, 170),rgb(0, 108, 141));
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    margin-top: 0px;
+}
+
+.dotted4 {
+    clear:both;
+    width:100%;
+    height: 90%;
+    border: rgba(255, 255, 255, 0.7);
+    border-width: 4px;
+    border-style: dashed;
+    margin-left: 40px;
+    margin-right: 40px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+
+.p7 {
+    font-family: "Cerebri Sans", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    color: #ffffff;
+    text-decoration:none;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+.p8 {
+    float: left;
+    font-family: "Cerebri Sans", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration:none;
+    letter-spacing: -0.5px;
+    text-align: justify;
+    margin-right:30px;
+    margin-left:30px;
+}
+
+.image4 {
+    clear: both;
+    margin-right: 30px;
+    margin-left: 30px;
+    float:right;
+} 
+
+.evi5 {
+    display: block;
+    position: relative;
+    width: 100%;
+    background:linear-gradient(to top left, rgb(43, 43, 43),rgb(24, 21, 33) );
+    height: 500px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.dotted5 {
+    clear:both;
+    width:100%;
+    height: 90%;
+    border: rgba(255, 255, 255, 0.7);
+    border-width: 4px;
+    border-style: dashed;
+    margin-left: 40px;
+    margin-right: 40px;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+
+.p9 {
+    font-family: "Cerebri Sans", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    color: #ffffff;
+    text-decoration:none;
+    letter-spacing: -0.5px;
+    text-align: center;
+    
+}
+
+.p10 {
+    font-family: "Cerebri Sans", sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    color: #ffffff;
+    text-decoration:none;
+    letter-spacing: -0.5px;
+    text-align: justify;
+    margin-right:30px;
+    margin-left:30px;
+    float: right;
+}
+
+.image5 {
+    clear: both;
+    margin-right: 30px;
+    margin-left: 30px;
+    float:left;
+} 
+
+.what1{
+    font-family: "Cerebri Sans", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #edf0f1;
+    text-decoration:none;
+    margin-top: 0px;
+}
+
+.smallp {
+    position: relative;
+    font-family: "Cerebri Sans", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #000000;
+    text-decoration:none;
+    text-align:center;
+    margin-top:10px;
+    z-index:0;
+}
+
+.smallp2 {
+    position: relative;
+    font-family: "Cerebri Sans", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #f0f0f0;
+    text-decoration:none;
+    text-align:center;
+    margin-top:10px;
+    z-index:0;
+}
+
+.storm1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-left:100px;
+    margin-right:100px;
+    margin-top:0;
+}
+
+.storm2 {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+    margin-left:100px;
+    margin-right:100px;
+    padding-top:10px;
+}
+
+.what2 {
+    position: relative;
+    margin-left: 100px;
+    margin-right: 100px;
+    width:auto;
+    height: 350px;
+    justify-content: center;
+    align-items:center;
+    z-index:1;
+    border-radius: 100px;
+    padding:50px 100px 50px 100px;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    background-image:linear-gradient(to top left, rgb(61, 61, 61),rgb(10, 10, 10));
+}
+
+.what2 ul li{
+    font-size:17px;
+}
+
+.what4 ul li{
+    font-size:25px;
+    color:black;
+}
+
+
+.what3{
+    font-family: "cerebri sans", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #edf0f1;
+    text-decoration:none;
+    margin-top: 0px;
+}
+
+.what4 {
+    position: relative;
+    margin-left: 100px;
+    margin-right: 100px;
+    width:auto;
+    height: 300px;
+    justify-content: center;
+    align-items:center;
+    z-index:1;
+    border-radius: 100px;
+    margin-top:10px;
+    padding:50px 100px 50px 100px;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+    background-image:linear-gradient(to bottom right, rgb(230, 230, 230),rgb(191, 191, 191));
+}
+
+.solutions {
+    display: flex;
+    justify-content: center;
+    margin-left:100px;
+    margin-right:100px;
+    margin-top:-300px;
+    margin-bottom:60px;
+}
+
+.box1 {
+    position: relative;
+    display: inline-block;
+    margin-right:20px;
+}
+
+.box2 {
+    position: relative;
+    display: inline-block;
+    margin-right:20px;
+}
+
+.box3 {
+    position: relative;
+    display: inline-block;
+}
+
+.sal1{
+    pointer-events: none;
+    visibility:hidden;
+    opacity:0;
+    transition:visibility 0.2s linear,opacity 0.2s linear;
+    position: absolute;
+    z-index: 999;
+    margin: 0;
+        left: 0;
+        right: 0;        
+        text-align: center;
+        top: 0%; /* Adjust this value to move the positioned div up and down */
+        background: rgba(0, 0, 0, 0.7);
+        background-size: cover;
+        background-size:100%;
+        text-align: center;
+        font-family: "cerebri sans", sans-serif;
+        color: #fff;
+        width: 100%; /* Set the width of the positioned div */
+
+}
+
+.sal2{
+    pointer-events: none;
+    visibility:hidden;
+    opacity:0;
+    transition:visibility 0.2s linear,opacity 0.2s linear;
+    position: absolute;
+    z-index: 999;
+    margin: 0;
+    left: 0;
+        right: 0;        
+        text-align: center;
+        top: 0%; /* Adjust this value to move the positioned div up and down */
+        background: rgba(0, 0, 0, 0.7);
+        background-size: cover;
+        background-size:100%;
+        text-align: center;
+        font-family: "cerebri sans", sans-serif;
+        color: #fff;
+        width: 100%; /* Set the width of the positioned div */
+}
+
+.sal3{
+    pointer-events: none;
+    visibility:hidden;
+    opacity:0;
+    transition:visibility 0.2s linear,opacity 0.2s linear;
+    position: absolute;
+    z-index: 999;
+    margin: 0;
+        left: 0;
+        right: 0;        
+        text-align: center;
+        top: 0%; /* Adjust this value to move the positioned div up and down */
+        background: rgba(0, 0, 0, 0.7);
+        background-size: cover;
+        background-size:100%;
+        text-align: center;
+        font-family: "cerebri sans", sans-serif;
+        color: #fff;
+        width: 100%; /* Set the width of the positioned div */
+
+}
+
+.sol1 {
+    transition:ease .5s;
+    z-index:3;
+    position: relative;
+}
+
+.sol2 {
+    transition:ease .5s;
+    z-index:2;
+    position: relative;
+}
+
+.sol3 {
+    transition:ease .5s;
+    z-index:1;
+    position: relative;
+}
+
+.box1:hover {
+    transition:ease .5s;
+    z-index:4;
+}
+
+.box1:hover ~ .sol2 {
+    filter: blur(1px);
+}
+
+.box2:hover {
+    transition:ease .5s;
+    z-index:4;
+}
+
+.box2:hover ~ .sol1 {
+    filter: blur(1px);
+}
+
+.box3:hover {
+    transition:ease .5s;
+    z-index:4;
+}
+
+.box3:hover ~ .sol3 {
+    filter: blur(1px);
+}
+
+.sol1:hover{
+    transition:ease .5s;
+    height:275px;
+    z-index:4;
+    filter: blur(1px);
+    fill: rgba(0, 0, 0, 0.5);
+}
+
+.sol2:hover{
+    transition:ease .5s;
+    height:275px;
+    z-index:4;
+    filter: blur(1px);
+    fill: rgba(0, 0, 0, 0.5);
+}
+
+.sol3:hover{
+    transition:ease .5s;
+    height:275px;
+    z-index:4;
+    filter: blur(1px);
+    fill: rgba(0, 0, 0, 0.5);
+}
+
+.sol2:hover ~ .sal2{
+    visibility:visible;
+    opacity:1;
+    }
+
+.sol1:hover ~ .sal1{
+        visibility:visible;
+        opacity:1;
+        }
+
+    .sol3:hover ~ .sal3{
+            visibility:visible;
+            opacity:1;
+            }
+
+.actions{
+    display:block;
+    padding-top:100px;
+    margin-left:100px;
+    margin-right: 100px;
+}
+
+.icons,.icons2,.icons3 {
+    margin-left:100px;
+   margin-top:-60px;
+}
+
+.row {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.row2 {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.nucp, .nucpp, .ozone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nucp1 {
+    font-family: "cerebri sans", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #222222;
+    text-decoration:none;
+    padding-top:20px;
+    letter-spacing: -0.5px;
+    text-align: justify;
+    float: right;
+}
+
+.nucp3 {
+    font-family: "cerebri sans", sans-serif;
+    font-weight: 400;
+    font-size: 23px;
+    color: #111111;
+    text-decoration:none;
+    padding-top:20px;
+    letter-spacing: -0.5px;
+    text-align: justify;
+    float: right;
+}
+
+.nucp2 {
+    text-decoration:none;
+    letter-spacing: -0.5px;
+    text-align: justify;
+    float: left;
+    margin-left:20px;
+}
+
+.nucpp ul li {
+    font-family: "cerebri sans", sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    color: #111111;
+    text-decoration:none;
+    padding-top:20px;
+    letter-spacing: -0.5px;
+    text-align: justify;
+    float: left;
+    line-height:120%;
+}
+
+.relevance {
+    flex:grid;
+    align-items: center;
+    justify-content: center;
+    text-align:justify;
+    margin-top: 10px;
+}
+
+.relev {
+    font-family: "cerebri sans", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    color: #111111;
+    text-decoration:none;
+    padding-top:20px;
+    letter-spacing: -0.5px;
+    text-align: justify;
+}
+
+.nucp4{
+    font-family: "cerebri sans", sans-serif;
+    font-weight: 400;
+    font-size:20px;
+    line-height: 150%;
+    color: #111111;
+    text-decoration:none;
+    padding-top: 20px;
+    letter-spacing: -0.5px;
+    text-align: justify;
+}
+
+
+.addrec{
+    display: block;
+    position: relative;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 400px;
+    margin-bottom:0;
+    width:auto;
+    background-image: linear-gradient(to bottom right, rgb(37, 33, 41), rgb(25, 25, 29));
+    border-radius: 50px;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+
+.add1{
+    font-family: "cerebri sans", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration:none;
+    margin-top: 0px;
+}
+
+.additable tr td:first-child {
+    padding-right:20px;
+}
+
+.additable tr td:last-child {
+        border-left: 2px solid;
+        border-color: white;
+        padding-left:20px;
+}
+
+.wall4 {
+    position: relative;
+    size: 7700px 1500px;
+    margin-top:70px;
+    background-repeat: no-repeat;
+    align-content: center;
+    display: block;
+    width: 100%;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 150px;
+    margin: 0 auto;
+    margin-bottom:-100px;
+    background-color:rgb(10, 2, 19);
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+
+.footer1 {
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}
+
+.footertable tr td {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #edf0f1;
+    list-style:none;
+    cursor: pointer;
+}
+
+.footertable tr td:last-child {
+    border-left: 1px solid;
+    border-color: white;
+}
+
+
+@media only screen and (max-width:1024px) and (min-width:768px) { /*after niyan gawin mo yung sa smartphones pag tapos na yung content*/
+
+    form {
+        width:auto;
+    }
+
+    li, a, button {
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-size: 13px;
+        color: #edf0f1;
+        text-decoration:none;
+    }
+
+    .logo{
+        height: 45px;
+    }
+
+    body {
+        background-size: 3800px 1000px;
+    }
+
+
+    nav ul li ul li {
+        width: 70px; /*dito yung spacing ng rectangles*/ /*palitan lang width para dun sa text wrap*/
+        border-radius: 4px;
+        line-height: 10px;
+        margin-right:15px;
+        margin-left:10px;
+        margin-top:5px;
+        margin-bottom: 5px;
+        font-size: 11px;
+    }
+
+    .nav__links li:nth-child(1) {
+        padding: 0 20px 0 0;
+    }
+    
+    .nav__links li:nth-child(2) {
+        padding:0 20px 0 0;
+    }
+    
+    .nav__links li:nth-child(3) {
+        padding:0 20px 0 0;
+    }
+    
+    .nav__links li:nth-child(4) {
+        padding:0 0 0 0;
+    }
+
+    button {
+        padding: 9px 25px;
+        margin-left:20px;
+        background-color: rgba(0, 136, 169, 1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer; 
+        transition: all 0.3s ease 0s;
+    }
+
+    h1 {
+        animation:animate 1.7s cubic-bezier(0.075, 0.82, 0.165, 1);
+        text-align:middle;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 50px;
+        color: #edf0f1;
+        text-decoration:none;
+        margin-top:30px;
+        letter-spacing: -1px;
+    }
+
+    h2 {
+        animation:lol 0.9s linear;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        color: #e9e9e9be;
+        text-decoration:none;
+        margin-top:-15px;
+        letter-spacing: -1px;
+        text-align: center;
+    }
+
+    
+} /*change mo rin yung padding dun sa text kasi for some reason di gumagana*/
