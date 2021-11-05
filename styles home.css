@@ -728,7 +728,7 @@ footer {
 
 } /*change mo rin yung padding dun sa text kasi for some reason di gumagana*/
 
-@media only screen and (max-width:900px) and (min-width:650px) { 
+@media only screen and (max-width:1000px) and (min-width:650px) { 
 
     html {
         zoom:50%;
@@ -736,7 +736,7 @@ footer {
 
 }
 
-@media only screen and (max-width:640px) and (min-width:100px) { 
+@media only screen and (max-width:660px) and (min-width:100px) { 
 
     html {
         zoom:33%;
@@ -783,9 +783,6 @@ footer {
 
 @media only screen and (max-width:360px) and (min-width:100px) { 
 
-    html {
-        zoom:33%;
-    }
 
     .p6 {
         padding-left:50px;
